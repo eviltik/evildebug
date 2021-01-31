@@ -3,7 +3,7 @@ const semver = require('semver');
 
 const d = (() => {
     let projectPath;
-    if (semver.lt(process.version, '10.0.0')) {
+    if (semver.lt(process.version, '11.0.0')) {
         projectPath = process.mainModule.path;
     } else {
         projectPath = require.main.path;

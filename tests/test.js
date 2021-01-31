@@ -1,7 +1,7 @@
 const tap = require('tape');
 const { exec } = require('child_process');
 const filename = 'cliprog';
-const bin = `/usr/bin/node ./tests/project/${filename}.js`;
+const bin = `node ./tests/project/${filename}.js`;
 
 tap.test('exec cli tools', (t) => {
     const cmd = `${bin}`;

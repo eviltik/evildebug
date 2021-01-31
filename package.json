@@ -1,0 +1,28 @@
+{
+  "name": "evildebug",
+  "version": "1.0.0",
+  "description": "nodejs lazy debug module based on TJ Holowaychuk debug module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "DEBUG='myproject:*' node_modules/tape/bin/tape tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eviltik/evildebug.git"
+  },
+  "keywords": [
+    "debug"
+  ],
+  "author": "eviltik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eviltik/evildebug/issues"
+  },
+  "homepage": "https://github.com/eviltik/evildebug#readme",
+  "dependencies": {
+    "debug": "^4.3.1"
+  },
+  "devDependencies": {
+    "tape": "^5.1.1"
+  }
+}

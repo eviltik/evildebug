@@ -1,8 +1,14 @@
 const path = require('path');
+const semver = require('semver');
 
 const d = (() => {
-    process.stdout.write('kjqhsdkjqhsdkhqsd');
-    const projectPath = require.main.path || (process.mainModule && process.mainModule.path);
+    let projectPath;
+    if (semver.lt(process.version, '10.0.0')) {
+        projectPath = process.mainModule.path;
+    } else {
+        projectPath = require.main.path;
+    }
+    projectPath = require.main.path || (process.mainModule && process.mainModule.path);
     process.stdout.write('projectPath='+projectPath);
     const projectName = require(path.resolve(projectPath, 'package.json')).name;
     const fileName = path.basename(require.main.filename).replace(/\.js.?$/, '');

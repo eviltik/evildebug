@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/eviltik/evildebug#readme",
   "dependencies": {
-    "debug": "^4.3.1"
+    "debug": "^4.3.1",
+    "semver": "^7.3.4"
   },
   "devDependencies": {
     "tape": "^5.1.1"

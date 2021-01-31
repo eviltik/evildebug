@@ -1,6 +1,7 @@
 const path = require('path');
 
 const d = (() => {
+    console.log('kjqhsdkjqhsdkhqsd');
     const projectPath = require.main.path || (process.mainModule && process.mainModule.path);
     console.log('projectPath', projectPath);
     const projectName = require(path.resolve(projectPath, 'package.json')).name;
